@@ -1,0 +1,25 @@
+{
+  "name": "@gauthking/example-fakerjson-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "module": "build/index.m.js",
+  "unpkg": "build/index.umd.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./build && microbundle --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "keywords": [],
+  "author": "gauthking",
+  "license": "ISC",
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^4.0.2"
+  }
+}
